@@ -1,16 +1,16 @@
 # HotelBookingPrediction_MLProject
 This is the final project for my Introduction to Business Analytics Final project, completed at @10/08/2022
 
-Business Overview
+# Business Overview
 This project will analyze hotel cancellation data. Booking cancellations can be a hassle for the hospitality industry impacting on demand-management decisions. Many hotel chains now implement rigid 24 to 72 hour cancellation policies and overbooking tactics. These two strategies do not always help in maintaining the hotel’s reputation and repeat customers. 
 We want to demonstrate that by using machine learning and data mining, it is possible to build models to predict whether or not a customer will cancel their booking. By running the models daily against all reservations on-the-books, a hotel location can discover new information such as the number of room nights predicted to be canceled for each of the following days. Equipped with an accurate demand value, hotel managers can develop more effective overbooking and cancellation policies to accommodate their guests and maximize revenue.
 
-Modeling Ideas
+# Modeling Ideas
 This is a classification problem and hence the data science task is supervised learning. But we will also use unsupervised learning to explore the data before employing supervised learning. 
 Each observation (instance) represents a hotel booking. The Observation contains the following information: hotel type, whether the reservation was canceled or not(is_canceled), lead time, arrival date year, arrival date month, arrival date week number, arrival date day of month, stays in weekend nights, stays in week nights, number of adults specified in the reservation, number of children, babies, meal type, country, market segment, distribution channel, is repeated guest, previous cancellations from that customer, previous bookings not canceled, reserved room type, assigned room type, booking changes, deposit type, agent, company, days in waiting list, customer type, adr, required car parking spaces, total of special requests, reservation status, and reservation status date. 
 We chose is_canceled (whether the booking was canceled or not) as our target variable. It is derived from the reservation status(check-out/canceled). Many variables can be used in predicting whether the booking was canceled or not. We will explore some variables like the lead time, hotel type, country of origin, repeat guest, previous cancellations etc. 
 
-Data Details 
+# Data Details 
 • Give a short description of the data you are planning to use.
 The dataset compares various booking information between two hotels: a city hotel and a resort hotel. It has multiple variables (32 columns) and we plan on using whether the booking was canceled or not as the target variable.
 
